@@ -1,3 +1,4 @@
+import { SIGN_UP_BASE_PATH } from '../SignUpConstants';
 import { SignUpLayout } from './layouts/SignUpLayout';
 import { ConfirmationPage } from './pages/ConfirmationPage';
 import { ErrorPage } from './pages/ErrorPage';
@@ -6,7 +7,7 @@ import { SignUpPage } from './pages/SignUpPage';
 import { SuccessPage } from './pages/SuccessPage';
 
 export const SignUpRoute = {
-	path: '/',
+	path: SIGN_UP_BASE_PATH,
 	element: <SignUpLayout />,
 	children: [
 		{ path: '/', element: <SignUpPage /> },
