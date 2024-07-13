@@ -20,6 +20,7 @@
 	@layer color {
 		:root {
 			--color-red: red;
+			--color-lightRed: mistyrose;
 		}
 	}
 

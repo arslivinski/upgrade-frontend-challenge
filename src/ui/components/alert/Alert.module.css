@@ -1,0 +1,20 @@
+@layer component {
+	@layer alert {
+		.alert {
+			padding: var(--spacing-small);
+
+			border-color: var(--color-red);
+			border-radius: 0.25rem;
+			border-style: solid;
+			border-width: 1px;
+
+			font-family: var(--typeface-default);
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1.5rem;
+			color: var(--color-red);
+
+			background-color: var(--color-lightRed);
+		}
+	}
+}
