@@ -1,0 +1,22 @@
+@layer component {
+	@layer checkbox {
+		.checkbox {
+			width: 1.2rem;
+			height: 1.2rem;
+		}
+
+		.label {
+			padding-block: var(--spacing-xxsmall);
+			padding-inline: var(--spacing-xsmall);
+
+			font-family: var(--typeface-default);
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1;
+
+			display: flex;
+			align-items: center;
+			gap: var(--spacing-xsmall);
+		}
+	}
+}
