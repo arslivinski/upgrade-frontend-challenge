@@ -3,12 +3,13 @@ import {
 	ForwardRefExoticComponent,
 	InputHTMLAttributes,
 	PropsWithoutRef,
+	ReactNode,
 	RefAttributes,
 } from 'react';
 
 export interface CheckboxProps
 	extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
-	label?: string;
+	children?: ReactNode;
 }
 
 export interface CheckboxComponent
