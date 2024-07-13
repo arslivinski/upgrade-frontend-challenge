@@ -1,0 +1,18 @@
+@layer component {
+	@layer button {
+		.button {
+			padding-block: var(--spacing-xxsmall);
+			padding-inline: var(--spacing-xsmall);
+			font-family: var(--typeface-default);
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1.5rem;
+			text-align: center;
+			text-decoration: none;
+			text-transform: capitalize;
+			white-space: nowrap;
+			user-select: none;
+			cursor: pointer;
+		}
+	}
+}
