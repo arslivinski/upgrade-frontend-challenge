@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "start:mocks": "node server/main.js",
+    "start:dev": "vite",
+    "start": "run-p start:*",
+    "build": "vite build",
+    "test": "jest --watch"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "react": "^18.3.1",
@@ -17,28 +24,6 @@
     "npm-run-all": "^4.1.5",
     "supertest": "^7.0.0",
     "vite": "^5.3.3"
-  },
-  "scripts": {
-    "start:mocks": "node server/main.js",
-    "start:dev": "vite",
-    "start": "run-p start:*",
-    "build": "vite build",
-    "test": "jest --watch"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
   },
   "packageManager": "yarn@1.22.22"
 }
