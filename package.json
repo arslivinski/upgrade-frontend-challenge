@@ -8,7 +8,12 @@
     "start:dev": "vite",
     "start": "run-p start:*",
     "build": "vite build",
-    "test": "jest --watch"
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:app": "jest --testPathPattern=src/",
+		"test:app:watch": "yarn run test:app --watch",
+		"test:server": "jest --testPathPattern=server/",
+		"test:server:watch": "yarn run test:server --watch"
   },
   "dependencies": {
     "express": "^4.19.2",
