@@ -1,3 +1,14 @@
+import { Helmet } from 'react-helmet-async';
+
+const title = 'Additional Info';
+
 export function MoreInfoPage() {
-	return <h1>Additional Info</h1>;
+	return (
+		<>
+			<Helmet>
+				<title>{title}</title>
+			</Helmet>
+			<h1>{title}</h1>
+		</>
+	);
 }

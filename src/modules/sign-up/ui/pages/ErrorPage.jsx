@@ -1,3 +1,14 @@
+import { Helmet } from 'react-helmet-async';
+
+const title = 'Error';
+
 export function ErrorPage() {
-	return <h1>Error</h1>;
+	return (
+		<>
+			<Helmet>
+				<title>{title}</title>
+			</Helmet>
+			<h1>{title}</h1>
+		</>
+	);
 }

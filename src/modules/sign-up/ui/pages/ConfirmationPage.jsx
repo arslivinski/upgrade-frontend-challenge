@@ -1,3 +1,14 @@
+import { Helmet } from 'react-helmet-async';
+
+const title = 'Confirmation';
+
 export function ConfirmationPage() {
-	return <h1>Confirmation</h1>;
+	return (
+		<>
+			<Helmet>
+				<title>{title}</title>
+			</Helmet>
+			<h1>{title}</h1>
+		</>
+	);
 }

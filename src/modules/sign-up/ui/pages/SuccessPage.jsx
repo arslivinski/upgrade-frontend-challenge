@@ -1,3 +1,14 @@
+import { Helmet } from 'react-helmet-async';
+
+const title = 'Success!';
+
 export function SuccessPage() {
-	return <h1>Success!</h1>;
+	return (
+		<>
+			<Helmet>
+				<title>{title}</title>
+			</Helmet>
+			<h1>{title}</h1>
+		</>
+	);
 }
