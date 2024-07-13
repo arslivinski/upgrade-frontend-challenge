@@ -1,0 +1,22 @@
+@layer component {
+	@layer field {
+		.field {
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacing-xxsmall);
+		}
+
+		.label {
+			font-weight: 600;
+
+			&[data-required]::after {
+				content: ' *';
+				color: var(--color-red);
+			}
+		}
+
+		.error {
+			color: var(--color-red);
+		}
+	}
+}
