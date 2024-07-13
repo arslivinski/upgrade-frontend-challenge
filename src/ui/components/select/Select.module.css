@@ -1,0 +1,12 @@
+@layer component {
+	@layer select {
+		.select {
+			padding-block: var(--spacing-xxsmall);
+			padding-inline: var(--spacing-xsmall);
+			font-family: var(--typeface-default);
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1.5rem;
+		}
+	}
+}
