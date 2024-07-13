@@ -1,3 +1,5 @@
+import url from 'node:url';
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dns from 'dns';
@@ -15,5 +17,13 @@ export default defineConfig(() => {
 			port: 3000,
 		},
 		plugins: [react()],
+		resolve: {
+			alias: [
+				{
+					find: /^@\//,
+					replacement: url.fileURLToPath(new URL('./src/', import.meta.url)),
+				},
+			],
+		},
 	};
 });
