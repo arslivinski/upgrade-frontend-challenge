@@ -1,0 +1,29 @@
+.template {
+	width: 100%;
+	max-width: 512px;
+	margin: 0 auto;
+	padding: var(--spacing-medium);
+
+	@media (min-width: 768px) {
+		padding: var(--spacing-xxlarge);
+	}
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xxxlarge);
+}
+
+.title {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-medium);
+}
+
+.actions {
+	display: flex;
+	gap: var(--spacing-medium);
+}
