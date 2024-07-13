@@ -1,3 +1,5 @@
+import './App.css';
+
 import { StrictMode } from 'react';
 
 export function App() {

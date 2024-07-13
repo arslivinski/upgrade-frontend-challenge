@@ -1,0 +1,8 @@
+@layer base {
+	body {
+		font-family: var(--typeface-default);
+		font-size: 100%;
+		font-weight: normal;
+		line-height: 1.5;
+	}
+}

@@ -1,0 +1,40 @@
+@layer token {
+	@layer typeface {
+		:root {
+			--typeface-default: system-ui, sans-serif;
+		}
+	}
+
+	@layer font {
+		:root {
+			--font-xsmall: 0.5rem;
+			--font-small: 0.75rem;
+			--font-medium: 1rem;
+			--font-large: 1.25rem;
+			--font-xlarge: 1.5rem;
+			--font-xxlarge: 2rem;
+			--font-xxxlarge: 3rem;
+		}
+	}
+
+	@layer color {
+		:root {
+			--color-red: red;
+		}
+	}
+
+	@layer spacing {
+		:root {
+			--spacing-none: 0;
+			--spacing-xxxsmall: 0.125rem;
+			--spacing-xxsmall: 0.25rem;
+			--spacing-xsmall: 0.5rem;
+			--spacing-small: 0.75rem;
+			--spacing-medium: 1rem;
+			--spacing-large: 1.25rem;
+			--spacing-xlarge: 1.5rem;
+			--spacing-xxlarge: 2rem;
+			--spacing-xxxlarge: 3rem;
+		}
+	}
+}

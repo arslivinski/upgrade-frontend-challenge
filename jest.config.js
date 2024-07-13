@@ -8,6 +8,7 @@ const config = {
 	testEnvironment: 'jsdom',
 	moduleNameMapper: {
 		'^@/(.*)': '<rootDir>/src/$1',
+		'\\.css$': '<rootDir>/node_modules/jest-css-modules',
 	},
 };
 
