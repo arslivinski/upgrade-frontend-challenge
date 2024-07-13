@@ -1,9 +1,6 @@
-const request = require("supertest");
-const app = require(".");
+import request from "supertest";
 
-const error = (err) => {
-  if (err) throw err;
-};
+import { app } from "./app";
 
 it("returns colors", async () => {
   const response = await request(app).get("/api/colors");

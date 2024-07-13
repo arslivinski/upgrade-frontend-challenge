@@ -1,4 +1,5 @@
-const express = require('express');
+import express from 'express';
+
 const app = express();
 
 app.use((req, res, next) => {
@@ -25,8 +26,4 @@ app.post('/api/submit', express.json(), (req, res) => setTimeout(() => {
   }
 }, 3000 * Math.random()));
 
-if (!module.parent) {
-  app.listen(3001, () => console.log('Mock server running'));
-}
-
-module.exports = app;
+export { app };

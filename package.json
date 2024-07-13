@@ -2,6 +2,7 @@
   "name": "upgrade-challenge",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "express": "^4.19.2",
     "react": "^18.3.1",
@@ -18,7 +19,7 @@
     "vite": "^5.3.3"
   },
   "scripts": {
-    "start:mocks": "node server/index.js",
+    "start:mocks": "node server/main.js",
     "start:dev": "vite",
     "start": "run-p start:*",
     "build": "vite build",
