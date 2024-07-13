@@ -1,11 +1,9 @@
-import { createRoot } from 'react-dom/client';
+import { render, screen } from '@testing-library/react';
 
 import { App } from './App';
 
 it('renders without crashing', () => {
-	const div = document.createElement('div');
-	const root = createRoot(div);
+	render(<App />);
 
-	root.render(<App />);
-	root.unmount(div);
+	expect(screen.getByText('Sign Up')).toBeInTheDocument();
 });
