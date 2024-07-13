@@ -70,11 +70,11 @@ The following wireframe represents how each of these pages should look and the e
 
 ```json
 {
-  "name": "",
-  "email": "",
-  "password": "",
-  "color": "",
-  "terms": false
+	"name": "",
+	"email": "",
+	"password": "",
+	"color": "",
+	"terms": false
 }
 ```
 

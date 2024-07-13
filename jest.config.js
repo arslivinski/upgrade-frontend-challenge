@@ -5,7 +5,7 @@
  * @type {Config}
  */
 const config = {
-  testEnvironment: 'jsdom',
+	testEnvironment: 'jsdom',
 };
 
 export default config;
