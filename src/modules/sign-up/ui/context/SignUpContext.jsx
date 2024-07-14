@@ -12,7 +12,7 @@ export const SignUpActions = {
 	reset: 'reset',
 };
 
-const Steps = {
+export const SignUpSteps = {
 	initial: '',
 	more: 'more-info',
 	confirm: 'confirmation',
@@ -20,11 +20,16 @@ const Steps = {
 	error: 'error',
 };
 
-const StepsOrder = [Steps.initial, Steps.more, Steps.confirm, Steps.success];
+const StepsOrder = [
+	SignUpSteps.initial,
+	SignUpSteps.more,
+	SignUpSteps.confirm,
+	SignUpSteps.success,
+];
 
 function init() {
 	return {
-		step: Steps.initial,
+		step: SignUpSteps.initial,
 		data: {
 			name: '',
 			email: '',
@@ -78,7 +83,7 @@ function reducer(state, { type, payload }) {
 		case SignUpActions.error: {
 			return {
 				...state,
-				step: Steps.error,
+				step: SignUpSteps.error,
 			};
 		}
 		case SignUpActions.reset: {
