@@ -11,6 +11,7 @@ const config = {
 		'^@/(.*)': '<rootDir>/src/$1',
 		'\\.css$': '<rootDir>/node_modules/jest-css-modules',
 	},
+	transformIgnorePatterns: ['/node_modules/(?!(ky)/)'],
 };
 
 export default config;

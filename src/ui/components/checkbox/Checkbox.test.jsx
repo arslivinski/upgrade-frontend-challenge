@@ -11,7 +11,7 @@ describe('Checkbox', () => {
 	});
 
 	it('should render the label correctly', () => {
-		render(<Checkbox label="Label" />);
+		render(<Checkbox>Label</Checkbox>);
 
 		expect(screen.getByLabelText('Label')).toBeInTheDocument();
 	});
