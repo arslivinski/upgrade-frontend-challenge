@@ -1,0 +1,17 @@
+@layer component {
+	@layer message {
+		.message {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: var(--spacing-medium);
+
+			font-family: var(--typeface-default);
+			font-size: 1.5rem;
+			font-weight: 600;
+			line-height: 1.5;
+			text-align: center;
+			text-wrap: balance;
+		}
+	}
+}
