@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { SIGN_UP_BASE_PATH } from '../../SignUpConstants';
 
-const SignUpContext = createContext(undefined);
+export const SignUpContext = createContext(undefined);
 
 export const SignUpActions = {
 	next: 'next',

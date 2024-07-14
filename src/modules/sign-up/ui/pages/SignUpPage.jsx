@@ -8,11 +8,11 @@ import { SignUpTemplate } from '../components';
 import { useSignUpContext, SignUpActions } from '../context/SignUpContext';
 
 const schema = z.object({
-	name: z.string().trim().min(1, 'This field is required'),
+	name: z.string().trim().min(1, 'The name is required'),
 	email: z
 		.string()
 		.trim()
-		.min(1, 'This field is required')
+		.min(1, 'The e-mail is required')
 		.email('Please provide a valid e-mail address'),
 	password: z
 		.string()
@@ -22,6 +22,9 @@ const schema = z.object({
 		})
 		.refine((value) => /[A-Z]/.test(value), {
 			message: 'The password must have at least 1 uppercase character',
+		})
+		.refine((value) => /[0-9]/.test(value), {
+			message: 'The password must have at least 1 digit',
 		})
 		.refine((value) => /\W/.test(value), {
 			message: 'The password must have at least 1 special character',
