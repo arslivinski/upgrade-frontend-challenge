@@ -3,6 +3,7 @@ import './App.css';
 import { StrictMode } from 'react';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
+import { QueryProvider } from './context/QueryContext';
 import { Router } from './Router';
 
 export function App() {
@@ -10,7 +11,9 @@ export function App() {
 		<StrictMode>
 			<HelmetProvider>
 				<Helmet defaultTitle="Upgrade" titleTemplate="%s | Upgrade" />
-				<Router />
+				<QueryProvider>
+					<Router />
+				</QueryProvider>
 			</HelmetProvider>
 		</StrictMode>
 	);
