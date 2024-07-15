@@ -14,7 +14,7 @@ import { useSignUpContext, SignUpActions } from '../context/SignUpContext';
 const title = 'Additional Info';
 
 const schema = z.object({
-	color: z.string().trim().min(1, 'This field is required'),
+	color: z.string().trim().min(1, 'This color is required'),
 	terms: z
 		.boolean()
 		.refine((value) => value, { message: 'You must agree to Terms and Conditions to proceed' }),
@@ -42,7 +42,6 @@ export function MoreInfoPage() {
 	}
 
 	function onSubmit(payload) {
-		console.log('Submit', payload);
 		dispatch({ type: SignUpActions.next, payload });
 	}
 
